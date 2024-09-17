@@ -1,0 +1,27 @@
+### Get all posts
+GET http://localhost:3000/api/posts
+Accept: application/json
+
+###
+
+### Get all comments for a specific post (e.g., post with ID 1)
+GET http://localhost:3000/api/comments/1
+Accept: application/json
+
+###
+
+### Add a new comment
+POST http://localhost:3000/api/comments
+Content-Type: application/json
+
+{
+  "post_id": 1,
+  "user": "John Doe",
+  "comment": "This is a test comment."
+}
+
+###
+
+### Delete a comment (e.g., comment with ID 1)
+DELETE http://localhost:3000/api/comments/1
+Accept: application/json
